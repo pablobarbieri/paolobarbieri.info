@@ -63,6 +63,48 @@ body{
   text-decoration: none;
 }
 
+.marqueee_1 {
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 20s infinite linear;
+  padding-right: 100vh;
+  color: black;
+  margin-top: -50vw;
+  position: fixed;
+
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.marqueee_2 {
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 80s infinite linear;
+  padding-left: 100vh;
+  color: black;
+  margin-top: -50vw;
+  position: fixed;
+
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+@keyframes floatText {
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+
+
+
+
 .header {
   font-size: 16px;
   line-height: 0.8em;
