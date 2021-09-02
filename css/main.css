@@ -70,7 +70,7 @@ body{
   animation: floatText 20s infinite linear;
   padding-right: 100vh;
   color: black;
-  margin-top: -50vw;
+  margin-top: -20px;
   position: fixed;
 
   -webkit-user-select: none; /* Safari */        
@@ -86,7 +86,7 @@ body{
   animation: floatText 80s infinite linear;
   padding-left: 100vh;
   color: black;
-  margin-top: -50vw;
+  margin-top: calc(-100vw + 20px);
   position: fixed;
 
   -webkit-user-select: none; /* Safari */        
