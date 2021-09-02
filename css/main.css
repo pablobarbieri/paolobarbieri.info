@@ -110,6 +110,7 @@ body{
 
 .credits {
   color: rgb(190,190,190);
+  margin-bottom: 20px;
 }
 
 .credits a:hover {
@@ -199,5 +200,8 @@ body{
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+  }
+  .credits{
+    margin-bottom: 60px;
   }
 }
