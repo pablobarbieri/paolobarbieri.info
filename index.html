@@ -5,24 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/main.css">
-<style>
-</style>
-
-<!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#678fa6">
-<meta name="theme-color" conten="#ffffff">-->
-
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <script src="js/jquery-3.6.0.min.js"></script>
-
 <!--BODY-->
 <body onload="fillGallery()">
-
 <svg id="symbol" data-name="symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.8 411.71"><defs><style>.cls-1{fill:#e52321;}</style></defs><path class="cls-1" d="M287.8,145.53H158.6l0,0L238,.74,108.77.16,0,213.53H137.46L75.86,411.87,287.8,145.53Z" onclick="fillGallery()"/></svg>
 
+
+
+<!--MODIFICA TESTO SCORREVOLE-->
 <div id="mark" style="position: fixed; transform:rotate(-90deg)">
     <div class="marqueee_1">
         <span style="padding-left: 10vh">PER ORA VIVO A MILANO!</span>
@@ -30,6 +27,7 @@
         <span style="padding-left: 33vh; padding-right: 66vh">SITO IN CONTINUO AGGIORNAMENTO</span>
     </div>
 </div>
+
 
 
 <div id="mark" style="position: fixed; transform:rotate(90deg)" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
@@ -51,77 +49,52 @@
 
 
 
-<!--div id="mark">
-  <marquee class="marque_l" scrolldelay="35" scrollamount="2" truespeed="">
-    <span style="padding-left: 33vh">PER ORA VIVO A MILANO!</span>
-    <span style="padding-left: 33vh"><a href='tel:+393486413468' target='_blank'>+39 3486413468</a></span>
-    <span style="padding-left: 33vh">SITO IN CONTINUO AGGIORNAMENTO</span></marquee>
-</div-->
-
-<!--div id="mark" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-  <marquee class="marque_r" scrolldelay="35" scrollamount="2" truespeed="">
-    <span style="padding-right: 44vh">l←</span>
-    <span style="padding-right: 44vh">l←</span>
-    <span>l←</span></marquee>
-</div-->
-
+<!--SOSTITUIRE QUI I DUE LINK DOPO HREF= CON LINK AL PORTFOLIO-->
 <div class="header">
     <span class="left">Paolo Barbieri</span>
-    <!--SOSTITUIRE LINK AL PORTFOLIO-->
+    <!--SOSTITUIRE IL PRIMO LINK DOPO HREF= CON LINK AL PORTFOLIO-->
     <span class="right"><a href='https://github.com/pablobarbieri/paolobarbieri.info/raw/main/portfolio.pdf' target='_blank'>+Portfolio21</a>&nbsp;&nbsp;&nbsp;<a href='mailto:infopaolobarbieri@gmail.com' target='_blank'>@contattami</a>&nbsp;&nbsp;&nbsp;<a href='https://www.instagram.com/ppablo._/' target='_blank'>/Instagram</a></span>
 </div>
-
 <div class="header_mobile">
-    <span class="right_mobile"><a href='https://github.com/pablobarbieri/paolobarbieri.info/raw/main/portfolio.pdf' target='_blank'>+Portfolio21</a>&nbsp;&nbsp;&nbsp;<a href='mailto:infopaolobarbieri@gmail.com' target='_blank'>@contattami</a>&nbsp;&nbsp;&nbsp;<a href='https://www.instagram.com/ppablo._/' target='_blank'>/Instagram</a></span>
+    <!--SOSTITUIRE IL PRIMO LINK DOPO HREF= CON LINK AL PORTFOLIO-->
+    <span class="right_mobile"><a href='https://github.com/pablobarbieri/paolobarbieri.info/raw/main/portfolio.pdf' target='_blank' style="text-align: left;">+Portfolio21</a>&nbsp;&nbsp;&nbsp;<a href='mailto:infopaolobarbieri@gmail.com' target='_blank' style="text-align: center;">@contattami</a>&nbsp;&nbsp;&nbsp;<a href='https://www.instagram.com/ppablo._/' target='_blank' style="text-align: right;">/Instagram</a></span>
 </div>
+
+
 
 <div id="description_box" onmouseover="highlightOn()" onmouseout="highlightOff()">
     <p class="descript">Mi piace la <span class="red">combinazione</span>.<br>Tendo a comporre con gli elementi della <span class="red">realtà</span> e della <span class="red">fantasia</span> agendo tra <span class="red">graphic design</span> e <span class="red">arte</span>. Osservo, focalizzo i sensi e faccio una <span class="red">scelta</span>; metto in discussione la mia pratica, cosi da comprenderla e comunicare con più <span class="red">consapevolezza</span>. Mi piace <span class="red">variare</span> diversi strumenti e linguaggi visivi; muovermi in modo <span class="red">veloce</span> e <span class="red">intuitivo</span> al fine di poter visualizzare i risultati di un <span class="red">processo</span>. Mi interessa mediare, apprendere, configurare e trasformare. La <span class="red">riflessione</span> e l'interpretazione sono al centro dei miei studi. Inoltre, mi piace curare ogni minimo <span class="red">dettaglio</span>, ma spesso e volentieri, la <span class="red">casualità</span> è più veloce di me.</p>
 </div>
-
 <section id="gallery"></section>
-
-
 <div id="credits" style="text-align: center; margin-top:40px">
     <p class="credits" style="font-size: 10px">Sviluppato da <a href="http://www.schlatterca.com" style="text-decoration: underline;">Carlo Schlatter</a></p>
 </div>
-
 </body>
-
 <!--SCRIPT-->
 <script>
     var toBeHighlighted = document.querySelectorAll(".red");
-
     function highlightOn(){
         document.getElementsByClassName("descript")[0].classList.add('noHighlight');
         for (i=0; i<toBeHighlighted.length; i++){
             toBeHighlighted[i].classList.add('highlight');
         }
     }
-
     function highlightOff(){
         document.getElementsByClassName("descript")[0].classList.remove('noHighlight');
         for (i=0; i<toBeHighlighted.length; i++){
             toBeHighlighted[i].classList.remove('highlight');
         }
     }
-
-    function scramble(){
-        console.log("1312");
-    }
-
-
     function getRandom(min, max) {
       return Math.round(Math.random() * (max - min) + min);
     }
-
     function fillGallery() {
         $('#gallery').empty();
-
         var allImages = "";
         const usedNumbers = [];
-
         for (var i = 0; i < 40; i++) {
+        //SOSTITUIRE IL 2° NUMERO TRA PARENTESI
+        //ES. SE LE IMMAGINI SONO 60: getRandom(1,60)
           var number = getRandom(1,53);
           if((number < 10)&&(!usedNumbers.includes(number))){
             usedNumbers.push(number);
@@ -132,12 +105,9 @@
             allImages += '<img src="img/'+number+'.png'+'" alt="image">';
           } else {
             i = i-1;
-            console.log("ops");
           }
         }
-
         $('#gallery').append(allImages);
     }
 </script>
-
 </html>
