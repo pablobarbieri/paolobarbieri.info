@@ -26,43 +26,6 @@ body{
   display: none;
 }
 
-.marque_l{
-  font-size: 12px;
-  width: 104vh;
-  margin-top: -4vh;
-
-  position: fixed;
-  transform: rotate(90deg);
-  transform-origin: left bottom;
-  left: 0;
-  top: 0;
-  direction: rtl;
-
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-.marque_r{
-  font-size: 12px;
-  width: 104vh;
-  margin-top: 100vh;
-  position: fixed;
-  transform: rotate(90deg);
-  transform-origin: right top;
-  right: 0;
-
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-.marque a{
-  text-decoration: none;
-}
-
 .marqueee_1 {
   font-size: 12px;
   display: inline-block;
@@ -83,7 +46,7 @@ body{
   font-size: 12px;
   display: inline-block;
   white-space: nowrap;
-  animation: floatText 80s infinite linear;
+  animation: floatText 50s infinite linear;
   padding-left: 100vh;
   color: black;
   margin-top: calc(-100vw + 20px);
@@ -100,10 +63,6 @@ body{
     transform: translateX(-80%);
   }
 }
-
-
-
-
 
 .header {
   font-size: 16px;
@@ -129,8 +88,13 @@ body{
   display: none;
 }
 
+.right_mobile{
+  display: none;
+}
+
 .header_mobile a{
   text-decoration: none;
+  width: 30vw;
 }
 
 .left {
@@ -237,7 +201,6 @@ body{
     margin-bottom: 15px;
     text-align: right;
 
-    font-size: 15px;
     width: calc(100vw - 40px);
 
     border-block-end: 1px solid black;
@@ -246,6 +209,12 @@ body{
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+  }
+  .right_mobile{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    width: calc(100vw - 40px);
   }
   .credits{
     margin-bottom: 60px;
