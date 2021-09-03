@@ -1,5 +1,21 @@
-.Caricamenti immagini
+L'unico file da modificare per aggiornare il sito è "index.html".
+Lo si può aggiornare direttamente da GitHub, aprendolo e cliccando sulla matita ("edit this file").
+Una volta modificato, premere il bottone verde "commit changes" in fondo.
 
-.Modifica testo scorrevole sinistra
 
-.Caricamento Portfolio
+Per caricare nuove immagini:
+  — inserirle nella cartella "img" in formato .png o .gif, facendo attenzione a seguire la numerazione
+  — aggiornare index.html alla riga 99
+  — se ad es. si carica l'immagine "54.png", aggiornare la riga 98 sostituendo 53 con 54
+  
+  — per caricare una .gif, aggiornare anche la riga 95 per includere il numero della gif
+  — se ad es. si carica "55.gif", la riga diventa: const gif = [1,2,3,4,5,6,7,8,9,55];
+
+
+Per modificare il testo scorrevole a sinistra:
+  — aggiornare i testi dalla riga 22 alla 29
+
+
+Per caricare/aggiornare il portfolio:
+  — il portfolio può essere caricato su GitHub come "portfolio.pdf" senza bisogno di modificare i link
+  — altrimenti (se caricato altrove) sostituire i primi due link rispettivamente alla riga 56 e 60
