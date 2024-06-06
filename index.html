@@ -94,8 +94,8 @@
         const gif = [1];
         for (var i = 0; i < 90; i++) {
         //SOSTITUIRE IL 2° NUMERO TRA PARENTESI
-        //ES. SE LE IMMAGINI SONO 60: getRandom(1,4)
-          var number = getRandom(1,4);
+        //ES. SE LE IMMAGINI SONO 60: getRandom(1,151)
+          var number = getRandom(1,151);
           if((gif.includes(number))&&(!usedNumbers.includes(number))){
             usedNumbers.push(number);
             allImages += '<img src="img/'+number+'.gif'+'" alt="image">';
